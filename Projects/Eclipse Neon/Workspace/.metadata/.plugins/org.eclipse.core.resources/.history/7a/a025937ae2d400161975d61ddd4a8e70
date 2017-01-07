@@ -1,0 +1,62 @@
+/*
+ * hal.h
+ *
+ *  Created on: 07.01.2017
+ *      Author: mlokc
+ */
+
+#ifndef HAL_H_
+#define HAL_H_
+
+#define HAL_BOARD_TYPE                STM32F0_DISCO
+
+#if HAL_BOARD_TYPE == STM32F0_DISCO
+
+/** LED */
+#define HAL_LED_PORT                GPIOC
+#define HAL_LED_PIN                    GPIO_PIN_8
+
+/** USART */
+#define HAL_USART_PORT                GPIOA
+#define HAL_USART_TX_PIN            GPIO_PIN_2
+#define HAL_USART_RX_PIN            GPIO_PIN_3
+
+/** SPI */
+#define HAL_SPI_PORT                GPIOA
+#define HAL_SPI_NSS_PIN             GPIO_PIN_4
+#define HAL_SPI_SCK_PIN                GPIO_PIN_5
+#define HAL_SPI_MISO_PIN            GPIO_PIN_6
+#define HAL_SPI_MOSI_PIN            GPIO_PIN_7
+
+#endif
+
+#if HAL_BOARD_TYPE == PCB_V100
+
+/** LED */
+#define HAL_LED_PORT                GPIOB
+#define HAL_LED_PIN                    GPIO_PIN_7
+
+/** USART */
+#define HAL_USART_PORT                GPIOA
+#define HAL_USART_TX_PIN            GPIO_PIN_2
+#define HAL_USART_RX_PIN            GPIO_PIN_3
+
+/** SPI */
+#define HAL_SPI_PORT                GPIOA
+#define HAL_SPI_NSS_PIN             GPIO_PIN_4
+#define HAL_SPI_SCK_PIN                GPIO_PIN_5
+#define HAL_SPI_MISO_PIN            GPIO_PIN_6
+#define HAL_SPI_MOSI_PIN            GPIO_PIN_7
+
+#endif
+
+#define HAL_DDS_PS2_PORT            GPIOB
+#define HAL_DDS_PS2_PIN             GPIO_PIN_1
+
+#define HAL_DDS_PS1_PORT
+
+
+
+
+
+#endif /* HAL_H_ */

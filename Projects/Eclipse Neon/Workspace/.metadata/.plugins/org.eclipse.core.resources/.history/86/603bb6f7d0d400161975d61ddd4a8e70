@@ -1,0 +1,19 @@
+/*
+ * dds.h
+ *
+ *  Created on: 07.01.2017
+ *      Author: mlokc
+ */
+
+#ifndef DRIVERS_DDS_H_
+#define DRIVERS_DDS_H_
+#include "../hal.h"
+
+#ifndef DUPA
+#define DUPA 3
+#endif
+
+int dipa(void);
+
+
+#endif /* DRIVERS_DDS_H_ */

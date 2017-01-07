@@ -1,0 +1,23 @@
+19:22:32 **** Incremental Build of configuration Debug for project pps_phase_shifter ****
+make all 
+'Building file: ../src/drivers/clock.c'
+'Invoking: MCU GCC Compiler'
+D:\Uczelnia\Rok V\Semestr 10\Praca Magisterska\Oprogramowanie\Git\electronics\Projects\Eclipse Neon\Workspace\pps_phase_shifter\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32F0 -DSTM32 -DSTM32F030K6Tx -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x6 -I"D:/Uczelnia/Rok V/Semestr 10/Praca Magisterska/Oprogramowanie/Git/electronics/Projects/Eclipse Neon/Workspace/pps_phase_shifter/inc" -I"D:/Uczelnia/Rok V/Semestr 10/Praca Magisterska/Oprogramowanie/Git/electronics/Projects/Eclipse Neon/Workspace/pps_phase_shifter/CMSIS/core" -I"D:/Uczelnia/Rok V/Semestr 10/Praca Magisterska/Oprogramowanie/Git/electronics/Projects/Eclipse Neon/Workspace/pps_phase_shifter/CMSIS/device" -I"D:/Uczelnia/Rok V/Semestr 10/Praca Magisterska/Oprogramowanie/Git/electronics/Projects/Eclipse Neon/Workspace/pps_phase_shifter/HAL_Driver/Inc/Legacy" -I"D:/Uczelnia/Rok V/Semestr 10/Praca Magisterska/Oprogramowanie/Git/electronics/Projects/Eclipse Neon/Workspace/pps_phase_shifter/HAL_Driver/Inc" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/drivers/clock.d" -MT"src/drivers/clock.o" -o "src/drivers/clock.o" "../src/drivers/clock.c"
+'Finished building: ../src/drivers/clock.c'
+' '
+'Building target: pps_phase_shifter.elf'
+'Invoking: MCU G++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"D:\Uczelnia\Rok V\Semestr 10\Praca Magisterska\Oprogramowanie\Git\electronics\Projects\Eclipse Neon\Workspace\pps_phase_shifter\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -lm -o "pps_phase_shifter.elf" @"objects.list"  
+'Finished building target: pps_phase_shifter.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "pps_phase_shifter.elf" "pps_phase_shifter.bin"
+arm-none-eabi-size "pps_phase_shifter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4556	   1084	   1056	   6696	   1a28	pps_phase_shifter.elf
+' '
+
+19:22:37 Build Finished (took 4s.844ms)
+
