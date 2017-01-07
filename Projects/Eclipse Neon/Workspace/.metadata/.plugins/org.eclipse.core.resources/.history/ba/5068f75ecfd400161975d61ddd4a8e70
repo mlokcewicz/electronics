@@ -1,0 +1,16 @@
+/*
+ * dds.c
+ *
+ *  Created on: 07.01.2017
+ *      Author: mlokc
+ */
+
+#include "dds.h"
+
+#include "stm32f0xx_hal_gpio.h"
+
+void dipa(void)
+{
+	HAL_GPIO_EXTI_Callback(DUPA);
+}
+

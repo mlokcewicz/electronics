@@ -1,0 +1,13 @@
+/*
+ * dds.c
+ *
+ *  Created on: 07.01.2017
+ *      Author: mlokc
+ */
+
+#include "dds.h"
+
+/** AS9956 registers */
+
+#define CFR1                0x00 /** Control Function register 1 */
+
