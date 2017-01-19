@@ -1,6 +1,6 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shifter_eval Debug,org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shifter Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shifter_eval Debug,org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shift_cubemx Debug,org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shifter Debug
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shifter\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:pps_phase_shifter\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

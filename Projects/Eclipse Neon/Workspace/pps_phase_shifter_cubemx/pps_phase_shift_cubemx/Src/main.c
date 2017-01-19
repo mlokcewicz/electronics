@@ -33,6 +33,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f0xx_hal.h"
+#include "dma.h"
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
@@ -78,6 +79,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
 
@@ -92,7 +94,10 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+      extern UART_HandleTypeDef huart1;
+      int a =32;
+      HAL_UART_Transmit_DMA(&huart1, &a, 1);
+      HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 
