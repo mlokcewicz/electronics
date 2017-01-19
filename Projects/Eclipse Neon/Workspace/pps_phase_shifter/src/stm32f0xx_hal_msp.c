@@ -47,6 +47,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f0xx_hal.h"
+#include "hal.h"
 
 /** @addtogroup STM32F0xx_HAL_Driver
   * @{
@@ -74,7 +75,10 @@
   */
 void HAL_MspInit(void)
 {
+    __HAL_RCC_SYSCFG_CLK_ENABLE();
 
+    /* SysTick_IRQn interrupt configuration */
+    HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
 /**
@@ -90,6 +94,7 @@ void HAL_MspDeInit(void)
   * @brief  Initializes the PPP MSP.
   * @retval None
   */
+
 void HAL_PPP_MspInit(void)
 {
 

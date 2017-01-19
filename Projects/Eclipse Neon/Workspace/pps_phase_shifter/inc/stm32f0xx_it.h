@@ -54,6 +54,9 @@ void HardFault_Handler(void);
 void SVC_Handler(void);
 void PendSV_Handler(void);
 void SysTick_Handler(void);
+void DMA1_Channel2_3_IRQHandler(void);
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart);
+
 
 #ifdef __cplusplus
 }
