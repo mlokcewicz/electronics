@@ -1,11 +1,11 @@
 /*
- * dds.c
+ * ad9956.c
  *
  *  Created on: 07.01.2017
  *      Author: mlokc
  */
 
-#include "drivers/dds.h"
+#include "../inc/ad9956.h"
 
 /** AS9956 registers */
 
