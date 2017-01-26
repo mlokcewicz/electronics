@@ -16,8 +16,7 @@
 #endif
 #include "stm32f0xx_it.h"
 
-extern DMA_HandleTypeDef hdma_usart1_rx;
-extern DMA_HandleTypeDef hdma_usart1_tx;
+extern UART_HandleTypeDef* uart_get_handle(void);
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -44,13 +43,7 @@ void SysTick_Handler(void)
 #endif
 }
 
-void DMA1_Channel2_3_IRQHandler(void)
+void USART1_IRQHandler(void)
 {
-  HAL_DMA_IRQHandler(&hdma_usart1_tx);
-  HAL_DMA_IRQHandler(&hdma_usart1_rx);
-}
-
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
-{
-
+    HAL_UART_IRQHandler(uart_get_handle());
 }
