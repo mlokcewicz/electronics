@@ -1,2 +1,2 @@
 # electronics
-Some electronics stuff.
+Some electronics and embedded systems stuff.
